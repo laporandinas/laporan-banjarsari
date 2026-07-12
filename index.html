@@ -90,7 +90,10 @@ button {
 <input id="j1" class="input-jalur" placeholder="Jalur I">
 <input id="j2" class="input-jalur" placeholder="Jalur II">
 <input id="j3" class="input-jalur" placeholder="Jalur III">
-<input id="j4" class="input-jalur" placeholder="Jalur Badug">
+<input id="j4" class="input-jalur" placeholder="Jalur IV">
+<input id="j5" class="input-jalur" placeholder="Jalur Buntu III SF">
+<input id="j6" class="input-jalur" placeholder="Jalur Buntu III">
+<input id="j7" class="input-jalur" placeholder="Jalur Buntu IV">
 
 <button onclick="kirimWA()">Kirim Laporan Dinas</button>
 
@@ -157,23 +160,21 @@ const ORANG = {
 "Eric Fadhilah Nopani": "+62 821-8653-5108",
 "Oktapian Cahya Bangun": "+62 857-2724-9619",
 "Fajar Prayogo": "+62 813-9045-3960",
-"Sujono": "+62 852-4331-3449",
+"Eksan Raju Setiyanto": "+62 895-0291-0549",
 "Deny Setiawan": "+62 813-7315-9093",
-"APRIANDI": "+62 812-7136-7895",
+"Apriandi": "+62 812-7136-7895",
 "M. Fachri Fane": "+62 899-2013-753",
-"Ratanca Yuda": "+62 813-6664-6237",
+"M. Yose Al Kautsar": "+62 819-2906-6339",
 "Tri Ramadani": "+62 895-3648-42705",
 "Akhirudin Akbar": "+62 852-6813-9392",
-"Bambang Ardiansyah": "+62 852-7335-9369"
+"Rahman Hidayat": "+62 812-8801-8070"
 };
 
 const MAGANG = {
 "Rio Sandy Prasetya": "+62 819-3166-7828",
-"Eksan Raju Setiyanto": "+62 895-0291-0549",
 "Ardi Dwi Wijayanto": "+62 831-5490-1907",
 "M. Fariz Al Djibran": "+62 896-2532-9266",
 "M. Atrin Nelson": "+62 0851-5542-3443",
-"M. Yose Al Kautsar": "+62 819-2906-6339",
 "M. Rafi Al Munawar": "+62 821-8003-2555"
 };
 
@@ -186,9 +187,9 @@ const KAMTIB = {
 
 /* ROLE TERPISAH */
 const ROLE = {
-ppka: ["Hendi Putra","Wahyu Ramanda","Makmun","Nicko Ramadhan","Akhirudin Akbar","Bambang Ardiansyah"],
-plr: ["Iqbal Mohamad Alim","Diky Yoga Pratama","Nandika Maulana","Eric Fadhilah Nopani","Oktapian Cahya Bangun","Fajar Prayogo","Sujono","Deny Setiawan","Akhirudin Akbar","Bambang Ardiansyah"],
-prs: ["Apriandi","M. Fachri Fane","Ratanca Yuda","Tri Ramadani","Oktapian Cahya Bangun","Fajar Prayogo","Akhirudin Akbar","Bambang Ardiansyah"]
+ppka: ["Hendi Putra","Wahyu Ramanda","Makmun","Nicko Ramadhan","Akhirudin Akbar","Rahman Hidayat"],
+plr: ["Iqbal Mohamad Alim","Diky Yoga Pratama","Nandika Maulana","Eric Fadhilah Nopani","Oktapian Cahya Bangun","Fajar Prayogo","Eksan Raju Setiyanto","Deny Setiawan","Akhirudin Akbar","Rahman Hidayat"],
+prs: ["Apriandi","M. Fachri Fane","M. Yose Al Kautsar","Tri Ramadani","Oktapian Cahya Bangun","Fajar Prayogo","Akhirudin Akbar","Rahman Hidayat"]
 };
 
 /* LOAD */
@@ -324,7 +325,11 @@ C. Cuaca : ${cuaca}
 ${rapi("Jalur I", j1.value||"Kosong", "J")}
 ${rapi("Jalur II", j2.value||"Kosong", "J")}
 ${rapi("Jalur III", j3.value||"Kosong", "J")}
-${rapi("Jalur Badug", j4.value||"Kosong", "J")}
+${rapi("Jalur IV", j4.value||"Kosong", "J")}
+${rapi("Jalur Buntu III SF", j5.value||"Kosong", "J")}
+${rapi("Jalur Buntu III", j6.value||"Kosong", "J")}
+${rapi("Jalur Buntu IV", j7.value||"Kosong", "J")}
+
 
 Demikian Laporan ${shift} Stasiun Banjarsari, Terima Kasih.`;
 
